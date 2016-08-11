@@ -22,8 +22,8 @@ $(document).ready(function() {
 	$('#textoSigno #signos').fadeOut(0);
 })
 
-
-$('#revelaSignoBtn').click(function() {
+$('#revelaSignoBtn').on('click', function() {
+	$(this).attr("disabled","disabled");
 	$('#textoSigno #signos').fadeOut('slow', function() {
 		$('#sol').attr('class', 'simboloSigno');
 		var sol = sorteiaSigno();
@@ -39,5 +39,7 @@ $('#revelaSignoBtn').click(function() {
 		$('#lua').addClass(lua.classname);
 	});
 
-	$('#textoSigno #signos').fadeIn(1500);
-})
+	$('#textoSigno #signos').fadeIn(1500, function() {
+		$('#revelaSignoBtn').removeAttr("disabled");
+	});
+});
