@@ -15,6 +15,12 @@ html, body {
 	font-family: 'Raleway', sans-serif;
 }
 
+#about {
+	background-color: #f0ad4e;
+	border: 1px solid #eea236;
+	padding: 0 1em;
+}
+
 .footer {
 	position: absolute;
 	bottom: 0;
@@ -24,9 +30,22 @@ html, body {
 	padding: 1em;
 }
 
+.footer span {
+	color: black;
+}
+
+.footer a {
+	color: #666;
+}
+
 h1.title {
 	font-family: 'Uncial Antiqua', cursive;
 	font-size: 3em;
+}
+
+h2.subtitle {
+	font-family: 'Uncial Antiqua', cursive;
+	font-size: 2em;
 }
 
 #logo {
