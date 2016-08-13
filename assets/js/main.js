@@ -16,12 +16,24 @@ function sorteiaSigno() {
 	{name: 'Peixes', classname: 'pisces'}
 	];
 
-	return signo[Math.round(Math.random() * 11 )];
+	return signo[Math.round(Math.random() * 12 )];
 }
 
 $(document).ready(function() {
 	$('#textoSigno #signos').fadeOut(0);
+	$('#about-container').fadeOut(0);
 })
+
+$('#about-link').click(function() {
+	$('#about-container').fadeIn(250);
+	$('.footer').fadeOut(0);
+});
+
+$('#about-close').click(function() {
+	$('#about-container').fadeOut(250);
+	$('.footer').fadeIn(0);
+});
+
 
 $('#revelaSignoBtn').on('click', function() {
 	$(this).attr("disabled","disabled");

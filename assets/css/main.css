@@ -15,10 +15,30 @@ html, body {
 	font-family: 'Raleway', sans-serif;
 }
 
+#about-container {
+	background-color: rgba(0, 0, 0, 0.75);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+	display: none;
+}
+
 #about {
 	background-color: #f0ad4e;
 	border: 1px solid #eea236;
 	padding: 0 1em;
+	width: 90%;
+	margin: 3em auto;
+	border-radius: 0.5em;
+}
+
+#about-close {
+	position: relative;
+    top: 5px;
+    color: #5e3a08;
+    font-size: 2em
 }
 
 .footer {
@@ -35,7 +55,7 @@ html, body {
 }
 
 .footer a {
-	color: #666;
+	color: #5e3a08;
 }
 
 h1.title {
